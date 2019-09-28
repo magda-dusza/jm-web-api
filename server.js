@@ -1,6 +1,6 @@
 var express = require("express");
 var bodyParser = require("body-parser");
-var mongoose = require('mongoose'),;
+var mongoose = require('mongoose');
 var cors = require("cors");
 var port = process.env.PORT || 3000;
 
