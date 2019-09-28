@@ -1,0 +1,16 @@
+language: node_js
+node_js:
+- stable
+cache:
+  directories:
+  - node_modules
+script:
+- npm test
+- npm run build
+deploy:
+  provider: heroku
+  app: jm-web-api
+  api_key:
+    secure:qbezNRd9jV92n0r8WiRA5iYyJw58ERkEwcxfYokh+OIMddQvcvX4fUo8i+ox1dNdiFx87+b2BxH2jrmXzamSub5j4Jh0KNPWOzjtNyMeXXddHnMYsdViLMSnNL1hYu7txhqE4YDS8bSdCoNtBrgpi7Q8kaH8jZOje8llALSCtDZjEOrt6HXLkzt+0o3EiqmahAXI6LHmQ2cpefQvBSRPehbODlZWZI3gOQHfbdoU0TvHonoW2WG+7f/wCEQSCyRCXfM+4qP/7S5EqHVuPUBr/po7oTAf2EHeWv+zpg/GVo/zM8eBHSFBV5DEI8lyWeEVsHKUvNiZ0cqsUg2QnDbvCqfKGSkG23eqFJpy4kfXbgzN+ADsk8ka8WGxY+TX37Nii72sCo4ijcsJRQrUr215g1AfMbnKb9MH7qIMx8b84q/Ia6fVCSNuPDBydyrlVRPLMl/5Rqi006qR+J7ydPhJcRcyZc2gfJqsVsECpTAzQcN6Ax1gTn6VQ8h+PzwJD9uZJvwFebe02Nr6E+wqX9JN2fZMAEQUI3Yh+o1mRexoVI+DG9IZ8Bzc6/EMXHGK7Vm4lBgu2SPko0EpxIGsg7ZjT4OFY5C64Xw8fjG6g+S4iMWCxliT3VtUq9kd7M5RZGSatUQtPJ1tWoYDkRzbnM9LO5s2am9VNseZ62kHkgpgXYs=
+true:
+  branch: master
